@@ -1,0 +1,27 @@
+{
+  "name": "husky-base",
+  "version": "1.0.0",
+  "description": "Husky Base",
+  "main": "index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Naxirdan/husky-typescript-base.git"
+  },
+  "keywords": [
+    "angular",
+    "react",
+    "javascript",
+    "js",
+    "typescript",
+    "ts"
+  ],
+  "author": "Adrian Cejudo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Naxirdan/husky-typescript-base/issues"
+  },
+  "homepage": "https://github.com/Naxirdan/husky-typescript-base#readme"
+}

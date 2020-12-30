@@ -1,0 +1,12 @@
+package.json
+package-lock.json
+yarn.lock
+dist
+*/**/*.json
+.*
+./src/*.ico
+tslint-to-eslint-config.log
+*/**/.json*/**/*.conf*.
+./src/environments/*
+src/favicon.ico
+.tslint.json

@@ -8,6 +8,7 @@
     "test": "ng test",
     "e2e": "ng e2e",
     "postinstall": "npx husky install",
+    "test-headless": "ng test --watch=false --browsers=ChromeHeadless",
     "lint": "tsc --noEmit && eslint . --ext js,ts,json --quiet --fix",
     "format": "prettier src/**/*.ts --write",
     "eslint": "eslint 'src/app/**/*.ts'"
@@ -20,7 +21,7 @@
   "husky": {
     "hooks": {
       "pre-commit": "lint-staged",
-      "pre-push": "npm run test && npm run e2e"
+      "pre-push": "npm run test-headless"
     }
   },
   "private": true,

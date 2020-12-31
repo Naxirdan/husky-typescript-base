@@ -5,6 +5,7 @@ module.exports = function (config) {
   config.set({
     basePath: '',
     frameworks: ['jasmine', '@angular-devkit/build-angular'],
+    browsers: ['Chrome', 'ChromeHeadless', 'ChromeHeadlessNoSandbox'],
     plugins: [
       require('karma-jasmine'),
       require('karma-chrome-launcher'),
@@ -28,6 +29,12 @@ module.exports = function (config) {
       dir: require('path').join(__dirname, './coverage/angular-husky-skeleton'),
       subdir: '.',
       reporters: [{ type: 'html' }, { type: 'text-summary' }]
+    },
+    customLaunchers: {
+      ChromeHeadlessNoSandbox: {
+        base: 'ChromeHeadless',
+        flags: ['--no-sandbox']
+      }
     },
     reporters: ['progress', 'kjhtml'],
     port: 9876,

@@ -20,18 +20,19 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-		"eject": "react-scripts eject",
-		"postinstall": "npx husky install"
-	},
-	"lint-staged": {
+    "eject": "react-scripts eject",
+    "lint": "eslint --ext .jsx,.js,tsx,ts src",
+    "postinstall": "npx husky install"
+  },
+  "lint-staged": {
     "*.ts": [
-      "npm run prettier"
+      "npm run lint"
     ]
   },
   "husky": {
     "hooks": {
-			"pre-commit": "lint-staged",
-			"pre-push": "npm run test"
+      "pre-commit": "lint-staged",
+      "pre-push": "npm run test"
     }
   },
   "eslintConfig": {

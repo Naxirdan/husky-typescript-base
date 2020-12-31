@@ -25,7 +25,7 @@
     "postinstall": "npx husky install"
   },
   "lint-staged": {
-    "*.ts": [
+    "*.ts{,x}": [
       "npm run lint"
     ]
   },
